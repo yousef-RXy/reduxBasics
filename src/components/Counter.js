@@ -15,9 +15,9 @@ const Counter = () => {
 		dispatch({ type: "increase", value: 5 });
 	};
 
-	const decreaseHandler = () => {
-		dispatch({ type: "decrease", value: 5 });
-	};
+	// const decreaseHandler = () => {
+	// 	dispatch({ type: "decrease", value: 5 });
+	// };
 
 	const decrementHandler = () => {
 		dispatch({ type: "decrement" });
