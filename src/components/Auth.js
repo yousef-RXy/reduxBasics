@@ -1,11 +1,10 @@
-import { useSelector, useDispatch } from "react-redux";
-import { authActions } from "../store/index";
+import { useDispatch } from "react-redux";
+import { authActions } from "../store/auth";
 import { isEmail, isNotEmpty, hasMinLength } from "../util/validation";
 import classes from "./Auth.module.css";
 
 const Auth = () => {
 	const dispatch = useDispatch();
-	const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
 	const login = () => {
 		dispatch(authActions.login());
